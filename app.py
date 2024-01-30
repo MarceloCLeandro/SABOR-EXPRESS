@@ -37,11 +37,16 @@ def cadastrar_novo_restaurante():
     nome_do_restaurante = input('Digite o nome do Restaurante que deseja Cadastrar: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso')
-    input('Digite uma tecla para voltar ao menu de opções ')
+    input('\nDigite uma tecla para voltar ao menu de opções ')
     main()
 
 def listar_lestaurantes():
-    pass
+    os.system('cls')
+    print('Listar restaurantes cadastrados\n')
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+    input('\nDigite uma tecla para voltar ao menu de opções ')
+    main()
 
 def ativar_restaurante():
     pass
