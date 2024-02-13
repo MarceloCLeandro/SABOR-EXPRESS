@@ -179,3 +179,71 @@ palavras = frase.split()
 for palavra in palavras:
     contagem_palavras[palavra] = contagem_palavras.get(palavra, 0) + 1
 print(contagem_palavras)
+
+#Exercícios
+
+#    1. Crie uma docstring para a função exibir_nome_do_programa()
+
+'''Função responsavel por exibir o nome do programa ou projeto'''
+
+#    2. Crie uma docstring para a função exibir_opcoes()
+
+'''Exibe a lista de opões para o usuário'''
+
+#    3. Crie uma docstring para a função finalizar_app()
+
+'''Finaliza o aplicativo'''
+
+#    4. Crie uma docstring para a função opcao_invalida()
+
+'''Caso o usuario digite algo diferente das opções do menu, imprime a mensagem e retorna ao menu inícial'''
+
+#    5. Crie uma docstring para a função exibir_subtitulo(texto)
+
+'''Função responsavel por:
+    
+    - Limpar prompt de comando
+    - Inserir o caracter "*" em volta do subtitulo
+    
+'''
+
+#    6. Crie uma docstring para a função cadastrar_novo_restaurante()
+
+'''Função responsavel por cadastrar novos restaurantes
+    
+    Inputs:
+    - Nome do restaurante
+    - Categora
+
+    Outputs:
+    - Adiciona um novo restaurante a lista de restaurantes
+
+'''
+
+#    7. Crie uma docstring para a função listar_restaurantes()
+
+'''Imprime a lista de restaurantes cadastrados
+    
+    Output: 
+    - Nome do Restaurante, Categoria, Status de ativo ou inativo.
+
+'''
+
+#    8. Crie uma docstring para a função alternar_estado_restaurante()
+
+'''Verifica e imprime se o restaurante esta ativo ou não'''
+
+#    9. Crie uma docstring para a função escolher_opcao()
+
+'''Verifica as opções do menu inicial para dar andamento no programa'''
+
+#    10. Crie uma docstring para a função main()
+
+'''Função responsavel por:
+    
+    - Limpar prompt de comando
+    - Exibir o nome do programa ou projeto
+    - Exibe a lista de opões para o usuário
+    - Verifica as opções do menu inicial para dar andamento no programa
+    
+'''
