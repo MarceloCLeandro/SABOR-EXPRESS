@@ -17,19 +17,31 @@ def exibir_nome_do_programa():
       ''')
 
 def exibir_opcoes():
+
+    '''Exibe a lista de opões para o usuário'''
+
     print('1. Cadastrar Restaurante')
     print('2. Listar Restaurante')
     print('3. Alternar estado do Restaurante')
     print('4. Sair\n')
 
 def finalizar_app():
+
+    '''Finaliza o aplicativo'''
+
     exibir_subtitulo('Finalizando o App')
 
 def voltar_ao_menu():
+
+    '''Retorna ao menu inícial'''
+
     input('\nDigite uma tecla para voltar ao menu de opções ')
     main()
 
 def opcao_invalida():
+
+    '''C, imprime a mensagem e retorna ao menu inícial'''
+
     print('Opção Invalida!\n')
     voltar_ao_menu()
 
@@ -42,6 +54,16 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_novo_restaurante():
+    '''Função responsavel por cadastrar novos restaurantes
+    
+    Inputs:
+    - Nome do restaurante
+    - Categora
+
+    Outputs:
+    - Adiciona um novo restaurante a lista de restaurantes
+
+    '''
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do Restaurante que deseja Cadastrar: ')
     categoria = input(f'Digite a categoria do restaurante {nome_do_restaurante} cadastrado: ')
@@ -51,6 +73,7 @@ def cadastrar_novo_restaurante():
     voltar_ao_menu()
 
 def listar_restaurantes():
+    '''Imprime a lista de restaurantes cadastrados'''
     exibir_subtitulo('Listar restaurantes cadastrados')
     print(f'   {'Nome do restaurante'.ljust(25)} | {'Categoria'.ljust(25)} | Status\n\n')
     for restaurante in restaurantes:
@@ -61,6 +84,7 @@ def listar_restaurantes():
     voltar_ao_menu()
 
 def status_restaurante():
+    '''Verifica e imprime se o restaurante esta ativo ou não'''
     exibir_subtitulo('Alternando estado do restaurante')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja alterar o estado: ')
     verificar_restaurante = False
@@ -77,6 +101,7 @@ def status_restaurante():
     voltar_ao_menu()
 
 def escolher_opcao():
+    '''Verifica as opções do menu inicial para dar andamento no programa'''
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))# contertendo a String em Inteiro 
         #print(f'Você escolheu a opção {opcao_escolhida}')
